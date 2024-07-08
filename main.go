@@ -24,11 +24,11 @@ func main() {
 
 	router := mux.NewRouter()
 
-	router.HandleFunc("/todos", handlers.CreateTodo).Methods("POST")
-	router.HandleFunc("/todos", handlers.GetTodos).Methods("GET")
-	router.HandleFunc("/todos/{id}", handlers.GetTodo).Methods("GET")
-	router.HandleFunc("/todos/{id}", handlers.UpdateTodo).Methods("PUT")
-	router.HandleFunc("/todos/{id}", handlers.DeleteTodo).Methods("DELETE")
+	router.HandleFunc("/todo", handlers.CreateTodo).Methods("POST")
+	router.HandleFunc("/todo", handlers.GetTodos).Methods("GET")
+	router.HandleFunc("/todo/{id}", handlers.GetTodo).Methods("GET")
+	router.HandleFunc("/todo/{id}", handlers.UpdateTodo).Methods("PUT")
+	router.HandleFunc("/todo/{id}", handlers.DeleteTodo).Methods("DELETE")
 
 	log.Println("Server is running on port 8000")
 	log.Fatal(http.ListenAndServe(":8000", router))

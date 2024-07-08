@@ -17,11 +17,11 @@ This is a TODO API built with Golang and ScyllaDB that supports basic CRUD opera
 
 ## Endpoints
 
-- `POST /todos`: Create a new TODO item.
-- `GET /todos`: Get a paginated list of TODO items.
-- `GET /todos/{id}`: Get a TODO item by ID.
-- `PUT /todos/{id}`: Update a TODO item by ID.
-- `DELETE /todos/{id}`: Delete a TODO item by ID.
+- `POST /todo`: Create a new TODO item.
+- `GET /todo`: Get a paginated list of TODO items.
+- `GET /todo/{id}`: Get a TODO item by ID.
+- `PUT /todo/{id}`: Update a TODO item by ID.
+- `DELETE /todo/{id}`: Delete a TODO item by ID.
 
 ## Query Parameters
 
